@@ -23,5 +23,5 @@
     <bool name="config_customCutout">true</bool>
 
     <!-- Color of the FOD view -->
-    <color name="config_fodColor">#37ff00</color>
+    <color name="config_fodColor">#FF00CC00</color>
 </resources>
