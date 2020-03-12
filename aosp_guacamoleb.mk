@@ -11,11 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from guacamole device
 $(call inherit-product, device/oneplus/guacamoleb/device.mk)
 
-# Inherit some common Havok stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common PE stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := havoc_guacamoleb
+PRODUCT_NAME := aosp_guacamoleb
 PRODUCT_DEVICE := guacamoleb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OnePlus 7

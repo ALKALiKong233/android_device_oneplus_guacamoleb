@@ -16,11 +16,7 @@ PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-havok
-
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-havok/packages/apps/Snap
+    $(LOCAL_PATH)/overlay
 
 # Audio
 PRODUCT_COPY_FILES += \
